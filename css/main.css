@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Doppio+One);
 
 body {
 	margin: 0px;
@@ -33,6 +33,7 @@ img{
 h1 {
 	font-size: 30px;
 	font-weight: normal;
+	font-family: "Doppio One";
 }
 
 
@@ -46,8 +47,8 @@ h1 {
 	margin: 20px 0px 0px 0px;
 	position: relative;
 	height: 50px;
-	padding: 0px 0px 20px 0px;
-	border-bottom: 1px solid #cccccc;
+	padding: 0px 0px 15px 0px;
+	border-bottom: 1px solid #eee;
 }
 
 #heading #logo {
@@ -62,6 +63,7 @@ h1 {
     font-size: 40px;
     color: #000000;
     text-decoration: none;
+    font-family: "Doppio One";
 }
 
 #heading #logo #logo_docs {
