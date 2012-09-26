@@ -3,30 +3,13 @@ layout: blog
 title: Node JS Design Patterns 101
 category: blog
 tags: [nodejs]  
-summery: "Solutions for common problems encounter when using NodeJS"
+summery: "I've helped lot of my friends to getting started with Node. These are the problems they were getting into mostly. <br>Learning how to answer these problems will helps you to use Node JS without getting into much trouble."
 image: /images/blog/design-patterns.jpg
 ---
 
-I love Node JS. I've seen some weird rants against Node JS recently. When I saw them I felt bit sad. Node JS is good and getting better. And I think it is the easiest to use asynchronous development environment.
+I've helped lot of my friends to getting started with Node. These are the problems they were getting into mostly. Learning how to answer these problems will helps you to use Node JS without getting into much trouble.
 
-But Node JS is still an infant, it has lot to be improved and Node core team is doing well.Node JS is not (but possible) a general purpose library/framework. Once some one identify this there is no need to blame Node; Just try to help it to grow.
-
-I hope this post will help amature NodeJS developers to learn Node and use it correctly.
-
-##Getting Started
-
-Most of the amature NodeJS developers coming from PHP, Java, Python or similar language with a [synchronous development model](http://en.wikipedia.org/wiki/Synchronous_programming_language). He knows JavaScript too. Then he think, he is ready with Node. But most of the time he is not, here is why,
-
-* He used JavaScript on the Browser (this helps little for Node)
-* And he has used a Synchronous Programming language in the Server
-* Mostly he has less (or no) knowledge in [Asynchronous Programming / Development](http://en.wikipedia.org/wiki/Asynchronous_I/O)
-* When he start using Node he will get stucked and encounter really big problems.
-
-##Let's try Node
-
-I've helped few of my friends to getting started with Node. These are the problems they were getting into mostly. Learning how to answer these problems will helps you to use Node JS without getting into much trouble.
-
-###1. A sequence of logic with Asynchronous IO
+##1. How to write a sequence of logic with Asynchronous IO?
 
 What we want to do is, get a user from a database, change his name and notify him via an email.
 
@@ -72,7 +55,7 @@ What we want to do is, get a user from a database, change his name and notify hi
 		}
 	}
 
-###2. Execute few tasks parallelly and notifying after all completed
+##2. How to execute few tasks parallelly and notifying after all completed?
 
 We need to send few emails at once and display a message after all of them has been sent. In this case we know number of emails we are sending.
 
@@ -98,7 +81,7 @@ We need to send few emails at once and display a message after all of them has b
 
 	}
 
-###3. Iterate over array with some Asynchronous IO
+##3. How to iterate over array with some Asynchronous IO
 
 We've an array of userIds. Now we need to print their names in order. But we cannot use a forEach. let's see why?
 
@@ -147,7 +130,7 @@ Here is how we write it correctly
 	//call the function for the first times
 	printName();
 
-###4. Same as 1 but need sending email requires the user object
+##4. Same as 1 but need sending email requires the user object
 
 If you notice the #1 of our list correctly we don't see the `user` object in `doSendEmail` method. But  sometimes (most of the time) we need it. 
 
@@ -195,7 +178,7 @@ Here's an alternate way to write this without using nested callbacks.
 
 ##This is not the end
 
-Here I've do not used any NodeJs module to get things done. I just need to show the concept. There are few modules you can use to write NodeJS with less effort. [Async](https://github.com/caolan/async) and [Step](https://github.com/creationix/step) are the most famous. But you should step away from[ Node Fibers](https://github.com/laverdet/node-fibers).
+Here I've do not used any NodeJs module to get things done. I just need to show the concept. There are few modules you can use to write NodeJS with less effort. [Async](https://github.com/caolan/async) and [Step](https://github.com/creationix/step) are the most famous. But you should step away from [Node Fibers](https://github.com/laverdet/node-fibers).
 
 Nothing is perfect, this solutions may have bugs and places for improvement. So please share your thoughts!
 
