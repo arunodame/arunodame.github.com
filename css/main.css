@@ -30,6 +30,10 @@ img{
     padding: 3px;
 }
 
+a img {
+	border: 0px;
+}
+
 h1 {
 	font-size: 30px;
 	font-weight: normal;
