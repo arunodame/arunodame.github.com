@@ -3,7 +3,7 @@ layout: blog
 title: NPM loves Github
 category: blog
 tags: [npm, nodeJS, github]  
-summery: How we can use Github repo's with NPM JS
+summery: How we can use Github repos with NPM JS
 image: /images/blog/npm-love-github-thumb.png
 ---
 
