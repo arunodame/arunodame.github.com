@@ -15,6 +15,6 @@ Here is the Error Message
 
 ![JSHint's Evil Eval Check](/images/blog/jshint-eval-error.png)
 
-It seems like JSHint does not parse JavaScript for checking `eval` and possibly others. 
+It seems like JSHint does not parse JavaScript for checking `eval`. 
 
 	
