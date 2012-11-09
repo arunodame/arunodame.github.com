@@ -1,6 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 @import url(http://fonts.googleapis.com/css?family=Doppio+One);
 
+img, embed, object{
+	max-width: 100%;
+}
+
 body {
 	margin: 0px;
 	text-align: center;
@@ -42,24 +46,20 @@ h1 {
 
 
 #layout {
-	width: 930px;
+	width: 95%;
 	margin: auto;
 	text-align: left;
 }
 
 #heading {
-	margin: 20px 0px 0px 0px;
+	margin: 20px 0px 15px 0px;
 	position: relative;
-	height: 50px;
 	padding: 0px 0px 15px 0px;
 	border-bottom: 1px solid #eee;
 }
 
-#heading #logo {
+#logo {
 	float: left;
-	position: absolute;
-	top: 0px;
-	left: 0px;
 	font-size: 40px;
 }
 
@@ -70,17 +70,17 @@ h1 {
     font-family: "Doppio One";
 }
 
-#heading #logo #logo_docs {
+#logo #logo_docs {
 	color: #d40055;
 }
 
-#heading #links {
-	position: absolute;
-	top: 20px;
-	right: 0px;
+#links {
+	float: right;
+	margin: 20px 0 0 0;
+	color: #eee;
 }
 
-#heading #links img {
+#links img {
 
 	box-shadow: 0 0px 0px #cccccc;
 	border-radius: 0px;
@@ -100,13 +100,23 @@ h1 {
 	font-size: 13px;
 }
 
-.post {
+#posts ul {
+	list-style:none; 
+	margin: auto;
+	padding: 0px;
+}
+
+#posts ul li {
 	margin: 0px 20px 20px 0px;
-	width: 265px;
+	width: 250px;
 	float: left;
 	border-radius: 3px;
     padding: 10px;
     border: 1px solid #eee;
+}
+
+#posts ul li img {
+	width: 95%;
 }
 
 .post-title {
@@ -133,7 +143,7 @@ h1 {
 }
 
 #side-bar {
-	width: 200px;
+	width: 20%;
 	float: left;
 	margin: 30px 0px 0px 0px;
 }
@@ -160,9 +170,9 @@ h1 {
 
 #page {
 	margin-top: 20px;
-	width: 700px;
+	width: 75%;
 	float: left;
-	padding-left: 20px;
+	padding-left: 3%;
 	border-left: 1px dashed #ddd;
 }
 
@@ -189,4 +199,83 @@ blockquote{
 .marketing { background-color: #bb0066}
 .github { background-color: #8b4513}
 .websocket { background-color: #440055 }
+
+
+/****** Media Queries For Adaptive Layouts******/
+
+@media screen and (min-width: 1367) {
+
+	#posts ul li {
+		width: 220px;
+	}
+}
+
+@media screen and (max-width: 1366) {
+
+	#posts ul li {
+		width: 273px;
+	}
+}
+
+/* Tables - Landscape */
+@media screen and (max-width: 1280) {
+
+	#posts ul li {
+		width: 252px;
+	}
+
+}
+
+/* Tables - Landscape */
+@media screen and (max-width: 1024) {
+
+	#posts ul li {
+		width: 265px;
+	}
+
+}
+
+/* Tables - Verticle */
+@media screen and (max-width: 768) {
+
+	#posts ul li {
+		width: 300px;
+	}
+}
+
+/* Smart Phone */
+@media screen and (max-width: 480) {
+
+	#logo, #links {
+		float: none;
+		text-align: center;
+	}
+
+	#logo a {
+		font-size: 0.8em;
+	}
+
+	#links {
+		margin: 0 0 0 0;
+	}
+
+	#posts ul li {
+		width: 95%;
+	}
+
+	#side-bar {
+		display: none;
+	}
+
+	#page {
+		border-left: 0px;
+		width: 100%;
+		margin: 0 0 0 0 ;
+		padding: 0 0 0 0 ;
+	}
+
+	#page img {
+		width: 100%;
+	}
+}
 
