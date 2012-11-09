@@ -230,24 +230,31 @@ blockquote{
 
 /* Tables - Landscape */
 @media 
-only screen and (max-device-width:1000px),
+only screen and (max-device-width:1024px),
 only screen and (max-width: 1024px) {
 
 	#posts ul li {
-		width: 250px;
+		width: 265px;
 	}
 
 }
 
 /* Tables - Verticle */
 @media 
-only screen and (max-device-width:768px),
+only screen and (max-device-width:768px) and (orientation:portrait),
 only screen and (max-width: 768px) {
 
 	#posts ul li {
 		width: 300px;
 	}
 }
+
+@media 
+only screen and (max-device-width:768px) and (orientation:landscape) {
+
+	#posts ul li {
+		width: 205px;
+	}
 
 /* Smart Phone */
 @media 
