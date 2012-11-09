@@ -241,14 +241,13 @@ only screen and (max-width: 1024px) {
 
 /* Tables - Verticle */
 @media 
-(orientation:landscape) and (min-device-height:1000px){
+only screen and (max-device-width:768px),
+only screen and (max-width: 768px) {
 
 	#posts ul li {
-		width: 42%;
+		width: 300px;
 	}
 }
-
-
 
 /* Smart Phone */
 @media 
