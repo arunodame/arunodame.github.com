@@ -236,7 +236,7 @@ blockquote{
 }
 
 /* Tables - Verticle */
-@media only screen and (max-width: 768) {
+@media only screen and (max-device-width: 768) {
 
 	#posts ul li {
 		width: 300px;
@@ -244,7 +244,7 @@ blockquote{
 }
 
 /* Smart Phone */
-@media only screen and (max-width: 480) {
+@media only screen and (max-device-width: 480) {
 
 	#logo, #links {
 		float: none;
