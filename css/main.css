@@ -230,11 +230,11 @@ blockquote{
 
 /* Tables - Landscape */
 @media 
-only screen and (max-device-width:1024px),
+only screen and (max-device-width:1000px),
 only screen and (max-width: 1024px) {
 
 	#posts ul li {
-		width: 265px;
+		width: 250px;
 	}
 
 }
