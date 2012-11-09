@@ -14,11 +14,19 @@
 
 		hljs.initHighlightingOnLoad();
 
-		$(function() {
+		function applyTiles() {
+
 			var posts = $('#posts ul');
 			posts.imagesLoaded(function() {
 				$('#posts ul').masonry({ itemSelector : '.post' });;
 			});
+		}
+		$(function() {
+			applyTiles();
+		});
+
+		$(window).resize(function() {
+			applyTiles();
 		});
 
 	</script>

@@ -241,19 +241,15 @@ only screen and (max-width: 1024px) {
 
 /* Tables - Verticle */
 @media 
-only screen and (max-device-width:768px) and (orientation:portrait) {
+only screen and (max-device-width:768px) and (orientation:portrait),
+only screen and (max-width: 768px) {
 
 	#posts ul li {
-		width: 300px;
+		width: 42%;
 	}
 }
 
-@media 
-only screen and (max-device-width:768px) and (orientation:landscape) {
 
-	#posts ul li {
-		width: 205px;
-	}
 
 /* Smart Phone */
 @media 
