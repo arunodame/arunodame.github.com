@@ -258,10 +258,6 @@ only screen and (max-width: 480) {
 		text-align: center;
 	}
 
-	#logo a {
-		font-size: 0.7em;
-	}
-
 	#links {
 		margin: 0 0 0 0;
 	}
