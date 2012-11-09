@@ -250,8 +250,7 @@ only screen and (max-width: 768px) {
 
 /* Smart Phone */
 @media 
-only screen and (max-device-width:480px),
-only screen and (max-width: 480) {
+only screen and (max-width: 480px) {
 
 	#logo, #links {
 		float: none;
