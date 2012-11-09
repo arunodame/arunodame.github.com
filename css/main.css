@@ -227,7 +227,9 @@ blockquote{
 }
 
 /* Tables - Landscape */
-@media only screen and (max-width: 1024) {
+@media 
+only screen and (max-device-width:1024px),
+only screen and (max-width: 1024px) {
 
 	#posts ul li {
 		width: 265px;
@@ -236,7 +238,9 @@ blockquote{
 }
 
 /* Tables - Verticle */
-@media only screen and (max-width: 768) {
+@media 
+only screen and (max-device-width:768px),
+only screen and (max-width: 768px) {
 
 	#posts ul li {
 		width: 300px;
@@ -254,7 +258,7 @@ only screen and (max-width: 480) {
 	}
 
 	#logo a {
-		font-size: 0.8em;
+		font-size: 0.7em;
 	}
 
 	#links {
