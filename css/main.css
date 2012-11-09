@@ -203,14 +203,14 @@ blockquote{
 
 /****** Media Queries For Adaptive Layouts******/
 
-@media screen and (min-width: 1367) {
+@media only screen and (min-width: 1367) {
 
 	#posts ul li {
 		width: 220px;
 	}
 }
 
-@media screen and (max-width: 1366) {
+@media only screen and (max-width: 1366) {
 
 	#posts ul li {
 		width: 273px;
@@ -218,7 +218,7 @@ blockquote{
 }
 
 /* Tables - Landscape */
-@media screen and (max-width: 1280) {
+@media only screen and (max-width: 1280) {
 
 	#posts ul li {
 		width: 252px;
@@ -227,7 +227,7 @@ blockquote{
 }
 
 /* Tables - Landscape */
-@media screen and (max-width: 1024) {
+@media only screen and (max-width: 1024) {
 
 	#posts ul li {
 		width: 265px;
