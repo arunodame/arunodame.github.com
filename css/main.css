@@ -175,6 +175,7 @@ h1 {
 	padding-left: 3%;
 	border-left: 1px dashed #ddd;
 	font-size: 1.15em;
+	overflow: hidden;
 }
 
 .tag {
