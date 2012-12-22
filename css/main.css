@@ -18,6 +18,14 @@ body, div, a, input, select, button, textarea {
 	color: #333333;
 }
 
+code {
+	font-weight: bold;
+}
+
+pre code {
+	font-weight: normal;
+}
+
 a {
 	text-decoration: none;
 	color: #d40055;
