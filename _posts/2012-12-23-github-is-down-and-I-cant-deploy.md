@@ -7,6 +7,8 @@ summery: My Heroku app affected recent Github Outage. Here is why?
 image: /images/blog/github-outage-logo.jpg
 ---
 
+>I wrote this post while github is down. But I couldn't make it online at that time since my blog is powered by github pages.
+
 Today(2012 December 23), [Github](https://github.com) is experiencing major [system outage](http://news.ycombinator.com/item?id=4957935). Github has a very good uptime and this is not about them. This is about Heroku. Yes, [Heroku](https://heroku.com). Why? If it is an AWS outage this seems fair :) but how come Github? 
 
 ##Here is Why?
