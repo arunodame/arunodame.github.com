@@ -29,6 +29,7 @@ pre code {
 a {
 	text-decoration: none;
 	color: #d40055;
+	font-size: 100%;
 }
 
 a:hover {
