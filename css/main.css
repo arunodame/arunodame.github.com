@@ -18,6 +18,11 @@ body, div, a, input, select, button, textarea {
 	color: #333333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Doppio One";
+	font-weight: bold;
+}
+
 code {
 	font-weight: bold;
 }
@@ -50,7 +55,6 @@ a img {
 h1 {
 	font-size: 30px;
 	font-weight: normal;
-	font-family: "Doppio One";
 }
 
 
