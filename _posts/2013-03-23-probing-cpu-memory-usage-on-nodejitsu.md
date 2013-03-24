@@ -20,7 +20,7 @@ Today, I release `node-usage` with solaris compatibility. And now it works on No
 
 See it in action.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/zz39GUk4Kec" frameborder="0" allowfullscreen="true">
+<iframe width="640" height="360" src="http://www.youtube.com/embed/zz39GUk4Kec" frameborder="0" allowfullscreen="true">
 </iframe>
 
 [Here](https://github.com/arunoda/node-usage-nodejitsu) is the sample app used on the video.
